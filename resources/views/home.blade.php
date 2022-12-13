@@ -28,21 +28,21 @@
                 </ul>
             </div>
         </div>
-        <div class="w-3/4 container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
-            <form action="" method="" class="w-full">
-                <div class="flex flex-col gap-2 gap-y-8 pb-4 w-4/5">
+        <form action="" method="" class="w-full">
+            <div class="w-3/5 container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+                <div class="flex flex-col gap-2 gap-y-8 pb-4 w-8/12">
                     <div class="grid grid-cols-2 gap-2">
                             <div class="h-8 bg-c-gray">
-                                <label for="cityFromInput" class="block pl-1 text-black">From</label>
-                                <input list="cityFrom" name="cityFrom" id="cityFromInput" class="focus:outline-none w-full h-full bg-c-gray">
+                                <label for="cityFromInput" class="block pl-1 text-gray-500">From</label>
+                                <input list="cityFrom" name="cityFrom" id="cityFromInput" class="focus:outline-none pl-1 text-black w-full h-full bg-c-gray">
                             </div>
                             <datalist id="cityFrom">
                                 <option value="Warsaw">
                             </datalist>
 
                             <div class="h-8 bg-c-gray">
-                                <label for="cityToInput" class="block pl-1 text-black">To</label>
-                                <input list="cityTo" name="cityTo" id="cityToInput" class="focus:outline-none w-full h-full bg-c-gray">
+                                <label for="cityToInput" class="block pl-1 text-gray-500">To</label>
+                                <input list="cityTo" name="cityTo" id="cityToInput" class="focus:outline-none pl-1 text-black w-full h-full bg-c-gray">
                             </div>
                             <datalist id="cityTo">
                                 <option value="Warsaw">
@@ -51,23 +51,29 @@
                     </div>
                     <div class="grid grid-cols-3 gap-2">
                             <div class="h-8 bg-c-gray">
-                                <label for="departureInput" class="block pl-1 text-black">Departure</label>
+                                <label for="departureInput" class="block pl-1 text-gray-500">Departure</label>
                                 <input type="text" name="departure" id="departureInput" onfocus="(this.type='date')" class="focus:outline-none pl-1 w-full h-full bg-c-gray text-black">
                             </div>
 
                             <div class="h-8 bg-c-gray">
-                                <label for="arrivalInput" class="block pl-1 text-black">Arrival</label>
+                                <label for="arrivalInput" class="block pl-1 text-gray-500">Arrival</label>
                                 <input type="text" name="arrival" id="arrivalInput" onfocus="(this.type='date')" class="focus:outline-none pl-1 w-full h-full bg-c-gray text-black">
                             </div>
                         
                             <div class="h-8 bg-c-gray">
-                                <label for="cityToInput" class="block pl-1 text-black">To</label>
-                                <input list="cityTo" name="cityTo" id="cityToInput" class="focus:outline-none w-full h-full bg-c-gray">
+                                <label for="passengerInput" class="block pl-1 text-gray-500">Passengers</label>
+                                <input type="number" min="1" name="passengers" id="passengerInput" class="focus:outline-none pl-1 w-full h-full bg-c-gray text-black">
                             </div>
                     </div>
                 </div>
-            </form>
-        </div>
+                <div class="flex flex-col px-4 w-4/12">
+                    <div class="grid grid-cols-1 gap-2">
+                        <p class="text-xs">By clicking search you agree to the Website Terms of Use</p>
+                        <input type="submit" value="Szukaj" class="bg-c-secondary h-8 hover:bg-blue-400">
+                    </div>
+                </div>
+            </div>
+        </form>
     </nav>
 </body>
 </html>
