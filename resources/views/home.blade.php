@@ -12,23 +12,9 @@
     <script src="https://kit.fontawesome.com/8714f19098.js" crossorigin="anonymous"></script>
     <!-- CSRF token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    @vite('resources/css/app.css')
 </head>
-<body class="flex flex-col min-h-screen">
-    <nav id="header" class="w-full z-30 top-0 bg-indigo-900 text-white p-4">
-        <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
-            <p class="text-left">
-                <a href="" class="p-4" ><i class="fas fa-home fa-2x"></i></a>
-            </p>
-            <h1 class="text-right">
-                abc
-            </h1>
-        </div>
-    </nav>
-    <div class="flex-auto">
-        @yield('content')
-    </div>
-    <footer id="footer" class="w-full z-30 top-0 bg-indigo-900 text-white text-center p-6">
-        <p class="inline text-center">Blog &copy2021</p>
-    </footer>
+<body>
+    
 </body>
 </html>
