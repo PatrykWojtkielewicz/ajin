@@ -32,5 +32,15 @@
     <div>
         @yield('content')
     </div>
+    <footer class="w-full flex justify-center z-30 top-0 p-4">
+        <ul class="list-none w-3/5 flex justify-between">
+            <li class="inline px-2">General Terms & contions of carriage</li>
+            <li class="inline px-2">Terms of Use</li>
+            <li class="inline px-2">Privacy Policy</li>
+            <li class="inline px-2">Cookies</li>
+            <li class="inline px-2">Contact us</li>
+            <li class="inline px-2">Cookie preferences</li>
+        </ul>
+    </footer>
 </body>
 </html>
