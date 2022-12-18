@@ -24,9 +24,12 @@ class FlightController extends Controller
         $departureDay = date('l', strtotime($departure));
         $returnDay = date('l', strtotime($return));
         
-        $flights1 = Connection::where('departureAirportId', '=', '2')
+        $flights1 = Connection::select('connections.departureTime', 'connections.arrivalTime', 'connections.dayOfTheWeek', 'departureAirport.code', 'arrivalAirport.code')
+                            ->where('departureAirportId', '=', '2')
                             ->where('arrivalAirportId', '=', '1')
                             ->where('dayOfTheWeek', '=', $departureDay)
+                            ->join('airports as departureAirport', 'airports.id', '=', 'connections.departureAirportId')
+                            ->join('airports as arrivalAirport', 'airports.id', '=', 'connections.arrivalAirportId')
                             ->get();
         $flights2 = Connection::where('departureAirportId', '=', '2')
                             ->where('arrivalAirportId', '=', '1')
