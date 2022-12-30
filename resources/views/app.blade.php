@@ -17,7 +17,7 @@
 <body class="flex flex-col min-h-screen">
     <nav id="header" class="w-full z-30 top-0 bg-c-primary text-white p-4">
         <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 pt-2 pb-5">
-            <h1 class="float-left text-3xl">Ajin airlines</h1>
+            <a class="float-left text-3xl" href="/">Ajin airlines</a>
             <div class="float-right">
                 <ul class="list-none">
                     <li class="inline px-2">Plan</li> |
