@@ -55,43 +55,43 @@
         </div>
     </form>
     </nav>
-    <div class="bg-fixed bg-center bg-cover custom-img h-96">
+    <div class="bg-fixed bg-center bg-cover custom-bg h-96">
     </div>
     <div class="w-3/5 container mx-auto flex flex-wrap items-center justify-between mt-0 pt-4 pb-12">
         <div class="text-2xl w-full pb-8">Explore Europe</div>
         <div class="grid grid-cols-4 gap-6 w-full">
-            <div class="bg-c-primary h-48 w-full flex justify-center items-center text-2xl text-white">Route Map</div>
-            <div class="bg-c-primary h-48 w-full flex justify-center items-center text-2xl text-white">Travel Updates</div>
-            <div class="bg-c-primary h-48 w-full flex justify-center items-center text-2xl text-white">Flight Timetable</div>
-            <div class="bg-c-primary h-48 w-full flex justify-center items-center text-2xl text-white">My Bookings</div>
+            <a href="/" class="bg-c-primary h-48 w-full flex justify-center items-center text-2xl text-white hover:bg-c-primary-darker">Route Map</a>
+            <a href="/" class="bg-c-primary h-48 w-full flex justify-center items-center text-2xl text-white hover:bg-c-primary-darker">Travel Updates</a>
+            <a href="/" class="bg-c-primary h-48 w-full flex justify-center items-center text-2xl text-white hover:bg-c-primary-darker">Flight Timetable</a>
+            <a href="/" class="bg-c-primary h-48 w-full flex justify-center items-center text-2xl text-white hover:bg-c-primary-darker">My Bookings</a>
         </div>
 
         <div class="text-2xl w-full py-8">Explore Europe</div>
         <div class="grid grid-cols-4 gap-6 w-full">
-            <div class="bg-c-primary h-72 w-full flex justify-center items-center">
+            <a href="/excess-baggage" class="bg-c-primary h-72 w-full flex justify-center items-center hover:bg-c-primary-darker">
                 <div>
                     <p class="text-2xl text-white text-center">Excess <br/> Baggage</p>
                     <i class="fa-solid fa-cart-flatbed-suitcase flex justify-center align-center text-7xl pt-6"></i>
                 </div>
-            </div>
-            <div class="bg-c-primary h-72 w-full flex justify-center items-center">
+            </a>
+            <a href="/" class="bg-c-primary h-72 w-full flex justify-center items-center hover:bg-c-primary-darker">
                 <div>
                     <p class="text-2xl text-white text-center">Favourite Seat</p>
                     <i class="fa-solid fa-chair flex justify-center align-center text-7xl pt-6"></i>
                 </div>
-            </div>
-            <div class="bg-c-primary h-72 w-full flex justify-center items-center">
+            </a>
+            <a href="/" class="bg-c-primary h-72 w-full flex justify-center items-center hover:bg-c-primary-darker">
                 <div>
                     <p class="text-2xl text-white text-center">Travelling with children</p>
                     <i class="fa-solid fa-children flex justify-center align-center text-7xl pt-6"></i>
                 </div>
-            </div>
-            <div class="bg-c-primary h-72 w-full flex justify-center items-center">
+            </a>
+            <a href="/" class="bg-c-primary h-72 w-full flex justify-center items-center hover:bg-c-primary-darker">
                 <div>
                     <p class="text-2xl text-white text-center">Travelling <br/> with animals</p>
                     <i class="fa-solid fa-dog flex justify-center align-center text-7xl pt-6"></i>
                 </div>
-            </div>
+            </a>
         </div>
     </div>
 @endsection

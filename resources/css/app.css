@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-.custom-img {
+.custom-bg {
     background-image: url("../images/background.jpg");
+}
+.custom-baggage {
+    background-image: url("../images/baggage.jpg");
 }

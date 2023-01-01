@@ -32,7 +32,7 @@
     <div>
         @yield('content')
     </div>
-    <footer class="w-full flex justify-center z-30 top-0 p-4">
+    <footer class="w-full flex justify-center z-30 top-0 p-4 mt-auto border-2 border-gray-300">
         <ul class="list-none w-3/5 flex justify-between">
             <li class="inline px-2">General Terms & contions of carriage</li>
             <li class="inline px-2">Terms of Use</li>

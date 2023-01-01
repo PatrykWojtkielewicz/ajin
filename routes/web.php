@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\FlightController;
+use App\Http\Controllers\ExcessBaggageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,4 +18,5 @@ use App\Http\Controllers\FlightController;
 
 Route::get('/', [HomeController::class, 'index'])->name('start');
 Route::post('/flight/select', [FlightController::class, 'index'])->name('flight.select');
+Route::get('/excess-baggage', [ExcessBaggageController::class, 'index'])->name('excess-baggage');
 
