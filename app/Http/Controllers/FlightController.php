@@ -38,8 +38,8 @@ class FlightController extends Controller
                             ->join('airports as arrivalAirport', 'arrivalAirport.id', '=', 'connections.arrivalAirportId')
                             ->get();
         $flights2 = Connection::select('connections.departureTime', 'connections.arrivalTime', 'connections.dayOfTheWeek', 'departureAirport.code as departureAirport', 'arrivalAirport.code as arrivalAirport')
-                            ->where('departureAirportId', '=', $departureAirportId)
-                            ->where('arrivalAirportId', '=', $arrivalAirportId)
+                            ->where('departureAirportId', '=', $arrivalAirportId)
+                            ->where('arrivalAirportId', '=', $departureAirportId)
                             ->where('dayOfTheWeek', '=', $returnDay)
                             ->join('airports as departureAirport', 'departureAirport.id', '=', 'connections.departureAirportId')
                             ->join('airports as arrivalAirport', 'arrivalAirport.id', '=', 'connections.arrivalAirportId')
